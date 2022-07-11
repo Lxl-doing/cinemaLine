@@ -1,0 +1,18 @@
+.title h2{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+    line-height: 18px;
+}
+
+.title h2::before{
+    float: left;
+    content: "";
+    width: 4px;
+    height: 18px;
+    margin-right: 6px;
+    background-color: #409eff;
+}

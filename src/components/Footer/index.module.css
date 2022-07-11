@@ -1,0 +1,19 @@
+.wrap{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrap p{
+    height: 22px;
+    line-height: 22px;
+}
+
+.wrap span{
+    margin: 0 14px;
+}

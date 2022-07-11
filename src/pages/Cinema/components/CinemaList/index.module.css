@@ -1,0 +1,57 @@
+.wrap .item{
+    padding: 25px 0;
+    border-bottom: 1px dashed #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item .msg p:first-of-type{
+    font-size: 16px;
+    line-height: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.item .msg p:first-of-type:hover{
+    color: #409EFF;
+}
+
+.item .msg p:nth-of-type(2){
+    font-size: 14px;
+    line-height: 14px;
+    color: #999;
+}
+
+.item .buy{
+    /* width: 168px; */
+    display: flex;
+    align-items: center;
+}
+
+.item .buy p span{
+    font-size: 12px;
+    color: #409EFF;
+}
+
+.item .buy p span:nth-of-type(2){
+    font-size: 16px;
+}
+
+.item .buy p span:nth-of-type(3){
+    color: #ccc;
+}
+
+.item .buy div{
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: #409EFF;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100px;
+    box-shadow: 0 2px 10px -2px #409EFF;
+    margin: 0 20px 0 36px;
+    cursor: pointer;
+}

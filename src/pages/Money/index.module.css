@@ -1,0 +1,155 @@
+.payWrap{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.introduce{
+    position: absolute;
+    left: 120px;
+    top: 50%;
+    transform: translate(0, -80%);
+    width: 600px;   
+    margin: 0 auto;
+    width: 600px;
+}
+
+.wrap{
+    width: 600px;
+    margin: 0 auto;
+    height: 202px;
+    background-color: rgb(217, 236, 255);
+    padding: 20px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.movieMsg{
+    display: flex;
+}
+
+.movieMsg img{
+    width: 116px;
+    height: 161px;
+    object-fit: cover;margin-right: 10px;
+}
+
+.movieMsg .content{
+    margin-right: 100px;
+}
+
+.movieMsg .content p:nth-of-type(1){
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.showMsg p{
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.showMsg p span:first-of-type{
+    color: #9a9a9a;
+}
+
+.showMsg p span:last-of-type{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.red{
+    color: #eb002a!important;
+}
+
+.cost{
+    font-weight: normal!important;
+    font-size: 14px!important;
+}
+
+
+.needList{
+    width: 600px;
+    background-color: rgb(217, 236, 255);
+    display: flex;
+    min-height: 80px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.needList .ticket{
+    width: 320px;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+.needList p{
+    align-self: flex-start;
+    margin-top: 18px;
+}
+
+.needList .ticket span{
+    font-size: 12px;
+    display: inline-block;
+    color: #409EFF;
+    padding: 2px 5px;
+    width: 70px;
+    height: 26px;
+    line-height: 26px;
+    background: #fff;
+    border: 1px solid #409EFF;
+    text-align: center;
+    margin: 0 24px 10px 0;
+}
+
+.needList p > span{
+    color: #eb002a;
+    font-weight: 700;
+}
+
+
+.qrcode{
+    position: absolute;
+    left: 820px;
+    top: 50%;
+    transform: translate(0, -80%);
+    text-align: center;
+}
+
+.qrcode img{
+    width: 150px;
+    height: 150px;
+}
+
+.qrcode p{
+    font-size: 18px;
+}
+
+
+.btn{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-left: -42px;
+    width: 84px;
+    height: 32px;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: 1px solid;
+    border-radius: 3px;
+    color: #409eff;
+}
+.btn:hover{
+    background-color: rgba(0,102,255,.06);
+}

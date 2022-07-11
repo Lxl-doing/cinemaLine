@@ -1,0 +1,244 @@
+.header{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* 标题 */
+.header .titles{
+    flex: 0 0 165px;
+    font-size: 32px;
+    font-family: Helvetica,Tahoma,Arial,'宋体',sans-serif;;
+    color: #409EFF;
+}
+
+.header .titles i{
+    font-size: 32px;
+}
+
+
+/* 城市部分 */
+.header .city{
+    width: 80px;
+    height: 100%;
+    position: relative;
+}
+
+.header .wrap{
+    cursor: pointer;
+}
+
+.header .wrap:hover i{
+    transform: rotate(180deg);
+}
+
+.header .wrap span{
+    display: block;
+    width: 60px;
+    text-align: center;
+    line-height: 80px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.header .wrap span i{
+    transition: all .2s linear;
+    font-size: 14px;
+    margin-left: 4px;
+    display: inline-block;  /* 块级才能转 */
+}
+
+.header .wrap::after{
+    content: "";
+    display: block;
+    
+}
+
+.areas{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 100;
+    width: 478px;
+    height: 330px;
+    overflow-y: auto;
+    left: 0px;
+    top: 80px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(216, 216, 216);
+    border-image: initial;
+    display: none;
+}
+
+.header .city:hover .areas{
+    display: block;
+}
+
+.header .city .areas p,
+.header .city .areas > div{
+    padding: 0 20px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 16px;
+}
+
+.header .city .areas p{
+    line-height: 58px;
+}
+
+.header .city .areas > div{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header .areas >div div:first-of-type{
+    flex: 0 0 20px;
+    align-self: flex-start;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #eee;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.header .areas span{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    height: 24px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 2px 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .areas span:hover{
+    color: #fff;
+    background: #409EFF;
+}
+
+
+/* 导航栏标题 */
+.header ul{
+    height: 100%;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.header ul li{
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.header li .item{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    color:#000;
+}
+
+.header .item.active{
+    background-color: #409EFF;
+    color: #fff;
+}
+
+
+/* 搜索框 */
+.header .search{
+    position: relative;
+    margin-left: 80px;
+}
+
+.header .search .input{
+    display: inline-block;
+    height: 40px;
+    width: 220px;
+    box-sizing: border-box;
+    padding: 0 40px 0 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: #faf8fa;
+    overflow: hidden;
+    color: #333;
+    outline: none;
+}
+
+.header .search .icon{
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 30px;
+    background: #409EFF;
+    color: #fff;
+    font-size: 28px;
+    right: 0px;
+    top: 1px;
+    text-align: center;
+    line-height: 38px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+
+/* 用户登录 */
+.header .login{
+    position: relative;
+    margin-left: 55px;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header .login .avatar{
+    color: #eee;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background: lime; */
+    margin-right: 10px;
+}
+
+.header .login .bg{
+    background-size: cover;
+}
+
+.header .login .status{
+    flex: 0 0 50px;
+    width: 50px;
+    line-height: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header .login .loginout{
+    display: none;
+    position: absolute;
+    top: 19px;
+    left: 100px;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    padding: 10px 12px;
+    border: 1px solid rgb(216,216,216);
+}
+
+.header .login:hover .loginout{
+    display: block;    
+}

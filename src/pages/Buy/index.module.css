@@ -1,0 +1,61 @@
+.buyFooter{
+    display: flex;
+    width: 920px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.needList{
+    width: 700px;
+    background-color: rgb(217, 236, 255);
+    display: flex;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 0;
+}
+
+.needList .ticket{
+    width: 320px;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+.needList p{
+    align-self: flex-start;
+    margin-top: 18px;
+}
+
+.needList .ticket span{
+    font-size: 12px;
+    display: inline-block;
+    color: #409EFF;
+    padding: 2px 5px;
+    width: 70px;
+    height: 26px;
+    line-height: 26px;
+    background: #fff;
+    border: 1px solid #409EFF;
+    text-align: center;
+    margin: 0 24px 10px 0;
+}
+
+.needList p > span{
+    color: #eb002a;
+    font-weight: 700;
+}
+
+.btn{
+    text-align: center;
+    cursor: pointer;
+    background: #409EFF;
+    border: 0;
+    width: 155px;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+}

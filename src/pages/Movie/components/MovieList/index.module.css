@@ -1,0 +1,57 @@
+.wrap{
+    width: 1200px;
+    padding: 0 45px 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap .item{
+    width: 160px;
+    height: 292px;
+    /* border: 1px solid lime; */
+    /* box-sizing: border-box; */
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.wrap .item img{
+    display: block;
+    width: 160px;
+    height: 220px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: all .1s linear;
+}
+
+.wrap .item img:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .2);
+}
+
+.wrap .item p{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.wrap .item p:first-of-type{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrap .item p:first-of-type a{
+    font-size: 16px;
+}
+
+.wrap .item p.noScore{
+    font-size: 16px;
+    color: #ffb400;
+}
+
+.wrap .item p.score{
+    font-size: 24px;
+    font-style: italic;
+    color: #ffb400;
+}

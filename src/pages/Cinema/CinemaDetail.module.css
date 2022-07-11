@@ -1,0 +1,65 @@
+.movieWrap{
+    width: 100%;
+    margin-top: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.movieWrap .brief{
+    display: flex;
+}
+
+.brief > div:first-of-type{
+    margin: 0 20px 20px 0;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333;
+}
+
+.brief > div:nth-of-type(2){
+    font-size: 24px;
+    color: #faaf00;
+}
+
+.brief > div:nth-of-type(2) span{
+    content: "分";
+    font-size: 12px;
+}
+
+
+.movieWrap .msg{
+    display: flex;
+}
+
+.msg > div{
+    font-size: 14px;
+    color: #151515;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.msg > div span:first-of-type{
+    color: #999;
+}
+
+.msg > div span:not(:first-of-type){
+    margin-right: 10px;
+}
+
+
+.dateWrap{
+    text-align: center;
+}
+
+.dateWrap .date{
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 100px;
+    color: #333;
+    padding: 2px 10px;
+    margin-left: 12px;
+    cursor: default;
+    color: #fff;
+    background-color: #409EFF;
+}

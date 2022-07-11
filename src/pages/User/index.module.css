@@ -1,0 +1,239 @@
+.wrap{
+    width: 1000px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.wrap .user{
+    position: relative;
+    width: 100%;
+    height: 272px;
+    /* border: 1px solid lime; */
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgb(18 18 18 / 10%);
+}
+
+.user .bg{
+    height: 132px;
+    background-color: rgb(198, 226, 255);;
+}
+
+.user  img{
+    position: absolute;
+    bottom: 30px;
+    left: 24px;
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+    border: 4px solid #fff;
+}
+
+.user p{
+    margin-top: 30px;
+    margin-left: 220px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.user .btn{
+    position: absolute;
+    right: 60px;
+    top: 212px;
+    width: 84px;
+    height: 32px;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: 1px solid;
+    border-radius: 3px;
+    color: #409eff;
+}
+
+.user .btn:hover{
+    background-color: rgba(0,102,255,.06);
+}
+
+.user nav{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.user nav:hover{
+    color: #409eff;
+}
+
+
+/* 订单列表 */
+.orders{
+    margin: 30px 0 40px 0;
+}
+
+.item{
+    position: relative;
+    width: 1000px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: 1px dashed #e5e5e5; */
+}
+
+.item:nth-of-type(2n){
+    background-color: #f7f7f7;
+}
+
+.item .movieMsg{
+    /* margin-left: 40px; */
+    width: 360px;
+}
+
+.item .movieMsg > div{
+    height: 20px;
+    line-height: 20px;
+}
+
+.item .movieMsg > div:not(:last-of-type){
+    margin-bottom: 10px;
+}
+
+.item .movieMsg .title span:first-of-type{
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.item .showMsg p{
+    width: 240px;
+    height: 20px;
+    line-height: 20px;
+    /* margin-left: 100px; */
+}
+
+.item .showMsg p:not(:last-of-type){
+    margin-bottom: 6px;
+}
+
+.item .qrcode{
+    width: 80px;
+    height: 80px;
+}
+
+.item .refund{
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: #409EFF;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100px;
+    box-shadow: 0 2px 10px -2px #409EFF;
+    cursor: pointer;
+    margin-right: 38px;
+}
+
+.item .refunded{
+    width: 80px;
+    height: 30px;
+    color: #ccc;
+    /* background-color: #409EFF; */
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px -2px #ccc;
+    margin-right: 38px;
+}
+
+
+/* 朦层 */
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+}
+
+.modal .form{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,0);
+    width: 500px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    transition: .2s;
+    background: #fff;
+    margin: 100px auto;
+}
+
+.modal .form:hover{
+    box-shadow: 0 0 8px 0 rgb(232 237 250 / 60%),
+    0 2px 4px 0 rgb(232 237 250 / 50%);
+}
+
+.modal .form p:first-of-type{
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+}
+
+.modal .form p:first-of-type span{
+    font-size: 25px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.modal .form p:not(:first-of-type),
+.modal > div{
+    margin: 40px 0;
+    text-align: center;
+}
+
+.modal .form p:nth-of-type(2) input{
+    display: inline-block;
+    height: 34px;
+    width: 260px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    border: 1px solid #d9d9d9;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: #fff;
+    overflow: hidden;
+    color: #333;
+    outline: none;
+}
+
+.modal > div .btn{
+    width: 98px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #409eff;
+    background: #ecf5ff;
+    border: 1px solid #b3d8ff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s linear;
+    margin: 20px auto;
+}
+
+.modal > div .btn:hover{
+    background: #409eff;
+    border-color: #409eff;
+    color: #fff;
+}
